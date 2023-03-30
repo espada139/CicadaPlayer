@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion rootProject.compileSdkVersion
     defaultConfig {
         applicationId "com.cicada.player.demo"
-        minSdkVersion 18
-        targetSdkVersion 27
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -65,17 +65,22 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    api('com.android.support:support-v4:27.1.1') {
-        exclude group: 'com.android.support', module: 'support-vector-drawable'
-    }
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+//    api('com.android.support:support-v4:27.1.1') {
+//        exclude group: 'com.android.support', module: 'support-vector-drawable'
+//    }
+//    implementation 'com.android.support:appcompat-v7:27.1.1'
+//
+//    //recyclerView
+//    implementation 'com.android.support:recyclerview-v7:27.1.1'
+//    //gson
+//    implementation 'com.google.code.gson:gson:2.8.0'
+//    //分包
+//    implementation 'com.android.support:multidex:1.0.0'
 
-    //recyclerView
-    implementation 'com.android.support:recyclerview-v7:27.1.1'
-    //gson
-    implementation 'com.google.code.gson:gson:2.8.0'
-    //分包
-    implementation 'com.android.support:multidex:1.0.0'
+    implementation "$rootProject.appcompat"
+    implementation "$rootProject.recycleview"
+    implementation "$rootProject.multidex"
+    implementation "$rootProject.gson"
 
     implementation project(':premierlibrary')
     implementation project(':zxing')

@@ -1,10 +1,10 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion rootProject.compileSdkVersion
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 27
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -24,5 +24,7 @@ android {
 
 dependencies {
     implementation 'com.google.zxing:core:3.3.3'
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+//    implementation 'com.android.support:appcompat-v7:27.1.1'
+
+    implementation "$rootProject.appcompat"
 }

@@ -1,13 +1,13 @@
 package com.cicada.player.demo;
 
-import android.support.multidex.MultiDexApplication;
+import androidx.multidex.MultiDexApplication;
 
 import com.aliyun.externalplayer.exo.ExternPlayerExo;
 import com.cicada.player.CicadaExternalPlayer;
 import com.cicada.player.demo.util.SharedPreferenceUtils;
 
 
-public class PlayerApplication extends MultiDexApplication{
+public class PlayerApplication extends MultiDexApplication {
 
     @Override
     public void onCreate() {

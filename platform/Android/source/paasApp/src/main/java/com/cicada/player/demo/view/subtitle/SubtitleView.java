@@ -1,8 +1,6 @@
 package com.cicada.player.demo.view.subtitle;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.text.Html;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
@@ -23,6 +21,8 @@ import java.util.Map;
 import static com.cicada.player.demo.view.subtitle.LocationStyle.Location_Bottom;
 import static com.cicada.player.demo.view.subtitle.LocationStyle.Location_CenterH;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /*
  * Copyright (C) 2010-2017 Alibaba Group Holding Limited.

@@ -22,7 +22,7 @@
 
         <include layout="@layout/view_title" />
 
-        <android.support.v4.widget.NestedScrollView
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:overScrollMode="never">
@@ -41,7 +41,7 @@
                     android:gravity="center"
                     android:text="@string/btn_input_url"/>
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recycview_date_list"
                     android:overScrollMode="never"
                     android:layout_marginTop="20dp"
@@ -49,11 +49,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                </android.support.v7.widget.RecyclerView>
+                </androidx.recyclerview.widget.RecyclerView>
 
             </LinearLayout>
 
-        </android.support.v4.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
 
     </LinearLayout>
 

@@ -5,13 +5,15 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 
+import androidx.appcompat.widget.AppCompatSeekBar;
+
 import com.cicada.player.demo.R;
 import com.cicada.player.demo.util.DensityUtils;
 
 /**
  * data:2019-10-24
  */
-public class IndicatorSeekBar extends android.support.v7.widget.AppCompatSeekBar {
+public class IndicatorSeekBar extends AppCompatSeekBar {
     private Paint mPaint = null;
 
     public IndicatorSeekBar(Context context) {
